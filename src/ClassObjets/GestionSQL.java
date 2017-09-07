@@ -13,7 +13,7 @@ public class GestionSQL {
 
     private static final String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
     private static final String url = "jdbc:sqlserver://localhost:1433;"
-            + "databaseName=CarnetAdresse;user=sa;password=Bidibulle";
+            + "databaseName=CarnetAdresse;user=sa;password=sa";
 
     CarnetAdresse leCarnet = new CarnetAdresse();
    
@@ -128,7 +128,7 @@ public class GestionSQL {
         //on se connecte au serveur
         try {
             String url = "jdbc:sqlserver://localhost:1433;"
-                    + "databaseName=CarnetAdresse;user=sa;password=Bidibulle";
+                    + "databaseName=CarnetAdresse;user=sa;password=sa";
             connexion = DriverManager.getConnection(url);
         } catch (SQLException ex) {
             System.err.println("Oops:SQL: " + ex.getErrorCode() + "/" + ex.getMessage());

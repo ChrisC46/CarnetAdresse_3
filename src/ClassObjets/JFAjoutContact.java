@@ -299,7 +299,7 @@ public class JFAjoutContact extends javax.swing.JFrame {
 
         try {
             String url = "jdbc:sqlserver://localhost:1433;"
-                    + "databaseName=CarnetAdresse;user=sa;password=Bidibulle";
+                    + "databaseName=CarnetAdresse;user=sa;password=sa";
 
             connexion = DriverManager.getConnection(url);
         } catch (SQLException ex) {
